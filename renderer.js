@@ -115,7 +115,7 @@ function showDeleteConfirmation(date, eventText) {
                 const cell = event.currentTarget;
                 const date = cell.textContent;
                 if (date) {
-                    const eventText = prompt("Enter event for this date ?" + date) + months;
+                    const eventText = prompt("Enter event for this date ?" + date);
                     if (eventText) {
                         // Add the event to the specific cell
                         cell.innerHTML += `<br>${eventText}`;
